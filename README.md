@@ -80,6 +80,7 @@ User → MQTT → Broker → NodeMCU → Relay → Appliance
 ![Image 3](demo/screenshots/image3.jpeg)
 
 👉 Add video demo (very important for GitHub attraction)
+<video src="video 1.mp4" width="100%" controls></video>
 
 ---
 
