@@ -54,6 +54,8 @@ User → MQTT → Broker → NodeMCU → Relay → Appliance
 
 ### Circuit Diagram
 
+![Circuit Diagram](docs/circuit-diagram.png)
+
 ```
 ┌─────────────────┐
 │   Raspberry Pi  │
@@ -83,7 +85,13 @@ User → MQTT → Broker → NodeMCU → Relay → Appliance
     └───────────────┘
 ```
 
+### Hardware Components
+
+![Hardware Setup](docs/hardware-setup.jpg)
+
 ### System Flow Diagram
+
+![System Architecture](docs/system-architecture.jpg)
 
 ```
 ┌──────────────┐
