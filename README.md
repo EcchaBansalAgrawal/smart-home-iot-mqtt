@@ -54,7 +54,7 @@ User → MQTT → Broker → NodeMCU → Relay → Appliance
 
 ### Circuit Diagram
 
-![Circuit Diagram](docs/circuit-diagram.png)
+![Circuit Diagram](circuit-diagram.png)
 
 ```
 ┌─────────────────┐
