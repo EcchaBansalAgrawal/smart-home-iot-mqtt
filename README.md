@@ -57,32 +57,32 @@ User → MQTT → Broker → NodeMCU → Relay → Appliance
 ![Circuit Diagram](circuit-diagram.jpeg)
 
 ```
-                                                      ┌─────────────────┐
-                                                      │   Raspberry Pi  │
-                                                      │   (MQTT Broker) │
-                                                      │   Mosquitto     │
-                                                      └────────┬────────┘
-                                                               │ (WiFi/Ethernet)
-                                                               │
-                                                          ┌────┴─────┐
-                                                          │   WiFi   │
-                                                          │ Network  │
-                                                          └────┬─────┘
-                                                               │
-                                                          ┌────┴──────────┐
-                                                          │   NodeMCU     │
-                                                          │  (ESP8266)    │
-                                                          └────┬──────────┘
-                                                               │ GPIO Pin
-                                                          ┌────┴──────────┐
-                                                          │ Relay Module  │
-                                                          │ (5V/220V)     │
-                                                          └────┬──────────┘
-                                                               │
-                                                          ┌────┴──────────┐
-                                                          │  Light Bulb/  │
-                                                          │  Appliance    │
-                                                          └───────────────┘
+                                                  ┌─────────────────┐
+                                                  │   Raspberry Pi  │
+                                                  │   (MQTT Broker) │
+                                                  │   Mosquitto     │
+                                                  └────────┬────────┘
+                                                           │ (WiFi/Ethernet)
+                                                           │
+                                                      ┌────┴─────┐
+                                                      │   WiFi   │
+                                                      │ Network  │
+                                                      └────┬─────┘
+                                                           │
+                                                      ┌────┴──────────┐
+                                                      │   NodeMCU     │
+                                                      │  (ESP8266)    │
+                                                      └────┬──────────┘
+                                                           │ GPIO Pin
+                                                      ┌────┴──────────┐
+                                                      │ Relay Module  │
+                                                      │ (5V/220V)     │
+                                                      └────┬──────────┘
+                                                           │
+                                                      ┌────┴──────────┐
+                                                      │  Light Bulb/  │
+                                                      │  Appliance    │
+                                                      └───────────────┘
 ```
 
 ### Hardware Components
@@ -94,38 +94,38 @@ User → MQTT → Broker → NodeMCU → Relay → Appliance
 ![System Architecture](docs/system-architecture.jpg)
 
 ```
-                                                               ┌────────────────┐
-                                                               │  Mobile App    │
-                                                               │  (MQTT Client) │
-                                                               └──────┬─────────┘
-                                                                      │ Publish
-                                                                      │ "home/light/on"
-                                                                      │
-                                                           ┌──────────▼──────────────┐
-                                                           │      MQTT Broker        │
-                                                           │      (Raspberry Pi)     │
-                                                           │      Mosquitto          │
-                                                           └──────────┬──────────────┘
-                                                                      │ Subscribe
-                                                                      │ "home/light/on"
-                                                                      │
-                                                               ┌──────▼────────────┐
-                                                               │   NodeMCU         │
-                                                               │  (ESP8266)        │
-                                                               │  MQTT Client      │
-                                                               └──────┬────────────┘
-                                                                      │ GPIO Control
-                                                                      │
-                                                               ┌──────▼────────────┐
-                                                               │  Relay Module     │
-                                                               │  (5V Trigger)     │
-                                                               └──────┬────────────┘
-                                                                      │ High Voltage
-                                                                      │ Switch
-                                                               ┌──────▼────────────┐
-                                                               │  Appliance        │
-                                                               │  (Light/Heater)   │
-                                                               └───────────────────┘
+                                                       ┌────────────────┐
+                                                       │  Mobile App    │
+                                                       │  (MQTT Client) │
+                                                       └──────┬─────────┘
+                                                              │ Publish
+                                                              │ "home/light/on"
+                                                              │
+                                                   ┌──────────▼──────────────┐
+                                                   │      MQTT Broker        │
+                                                   │      (Raspberry Pi)     │
+                                                   │      Mosquitto          │
+                                                   └──────────┬──────────────┘
+                                                              │ Subscribe
+                                                              │ "home/light/on"
+                                                              │
+                                                       ┌──────▼────────────┐
+                                                       │   NodeMCU         │
+                                                       │  (ESP8266)        │
+                                                       │  MQTT Client      │
+                                                       └──────┬────────────┘
+                                                              │ GPIO Control
+                                                              │
+                                                       ┌──────▼────────────┐
+                                                       │  Relay Module     │
+                                                       │  (5V Trigger)     │
+                                                       └──────┬────────────┘
+                                                              │ High Voltage
+                                                              │ Switch
+                                                       ┌──────▼────────────┐
+                                                       │  Appliance        │
+                                                       │  (Light/Heater)   │
+                                                       └───────────────────┘
 ```
 
 ---
