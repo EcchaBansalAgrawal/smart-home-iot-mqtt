@@ -149,12 +149,13 @@ User → MQTT → Broker → NodeMCU → Relay → Appliance
 ## 📸 Demo
 
 👉 Add screenshots in `/demo/screenshots`
-![Image 1](demo/screenshots/image1.jpeg)
-![Image 2](demo/screenshots/image2.jpeg)
-![Image 3](demo/screenshots/image3.jpeg)
+![Image 1](image1.jpeg)
+![Image 2](image2.jpeg)
+![Image 3](image3.jpeg)
 <video src="video1.mp4" width="100%" controls></video>
 
 👉 Add video demo (very important for GitHub attraction)
+![Video](video1.mp4)
 
 
 
