@@ -65,8 +65,8 @@ User → MQTT → Broker → NodeMCU → Relay → Appliance
                                                                │ (WiFi/Ethernet)
                                                                │
                                                           ┌────┴─────┐
-                                                          │   WiFi    │
-                                                          │ Network   │
+                                                          │   WiFi   │
+                                                          │ Network  │
                                                           └────┬─────┘
                                                                │
                                                           ┌────┴──────────┐
@@ -94,18 +94,18 @@ User → MQTT → Broker → NodeMCU → Relay → Appliance
 ![System Architecture](docs/system-architecture.jpg)
 
 ```
-                                                               ┌──────────────┐
-                                                               │  Mobile App  │
-                                                               │  (MQTT Client)│
-                                                               └──────┬───────┘
+                                                               ┌────────────────┐
+                                                               │  Mobile App    │
+                                                               │  (MQTT Client) │
+                                                               └──────┬─────────┘
                                                                       │ Publish
                                                                       │ "home/light/on"
                                                                       │
-                                                               ┌──────▼─────────────────┐
-                                                               │  MQTT Broker           │
-                                                               │  (Raspberry Pi)        │
-                                                               │  Mosquitto             │
-                                                               └──────┬─────────────────┘
+                                                           ┌──────────▼──────────────┐
+                                                           │      MQTT Broker        │
+                                                           │      (Raspberry Pi)     │
+                                                           │      Mosquitto          │
+                                                           └──────────┬──────────────┘
                                                                       │ Subscribe
                                                                       │ "home/light/on"
                                                                       │
